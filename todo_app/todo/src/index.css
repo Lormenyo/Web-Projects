@@ -1,6 +1,7 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
+    background-color: burlywood;
   }
   
   ol, ul {
@@ -15,6 +16,7 @@ body {
   
   .status {
     margin-bottom: 10px;
+    font-size: 20px;
   }
   
   .square {
@@ -24,12 +26,12 @@ body {
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
-    height: 34px;
+    height: 70px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 70px;
   }
   
   .square:focus {
