@@ -1,0 +1,29 @@
+.TopNavMenu{
+    background: #FAF8F2;
+}
+
+.menuHeader{
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.7rem;
+    color: rgba(130, 130, 130, 1);
+    border-bottom: 1px solid rgba(120, 110, 108, 1);
+    text-align: left;
+}
+
+.menuItem{
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.9rem;
+    color: #452725;
+    border-bottom: 1px solid rgba(120, 110, 108, 1);
+    vertical-align: middle;
+    text-align: left;
+    padding: auto;
+}
+
+a {
+    color: #452725;
+    text-decoration: none;
+    text-align: left;
+}

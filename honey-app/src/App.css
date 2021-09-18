@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  background-color: #FAF8F2;
+  height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0px 20px #00000044;
+  position: relative;
+}
+
+.App-logo{
+  width: 50px;
+  height: 50px;
+  margin:auto;
+  background: url("../src/assets/img_logo_original.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
