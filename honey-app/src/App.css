@@ -29,15 +29,10 @@
 }
 
 .postImage{
-  height: 100vh;
-  background:url("../src/assets/post.png");
+  height: 90vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../src/assets/post.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.bottomGradient{
-  position: absolute;
-  height: 100px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
-}

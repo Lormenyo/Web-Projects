@@ -5,6 +5,7 @@ import { FiMenu } from "react-icons/fi";
 // import {BiDownArrow} from "react-icons/bi"
 import TopNavMenu from "../src/components/topNav/topNavMenu";
 import React, { useState } from "react";
+import BottomNavBar from "./components/bottomNav/bottomNav";
 
 function App() {
   const [isMenuVisible, setMenuVisibility] = useState(false);
@@ -31,9 +32,10 @@ function App() {
       </div>
 
       <div className="Posts">
-        <div className="bottomGradient"></div>
         <div className="postImage"></div>
       </div>
+      {/* <div className="bottomGradient"></div> */}
+      <BottomNavBar />
     </div>
   );
 }

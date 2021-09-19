@@ -1,0 +1,25 @@
+.BottomNavBar {
+  height: 10vh;
+  position: relative;
+  background: #c1bab9;
+  color: #452725;
+}
+
+.MenuItem {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.row {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.selected {
+  background-color: #A89D9B;
+}
