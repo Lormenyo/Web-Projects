@@ -1,0 +1,25 @@
+.postTitle {
+  color: white;
+}
+
+.postTitle .row {
+  height: 20px;
+}
+
+.title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 0.6rem;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}

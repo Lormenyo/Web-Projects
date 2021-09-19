@@ -1,5 +1,7 @@
 .TopNavMenu{
     background: #FAF8F2;
+    position: relative;
+    z-index: 10;
 }
 
 .menuHeader{
