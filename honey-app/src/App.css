@@ -1,3 +1,8 @@
+.App-background{
+  background-color: #FAF8F2;
+  width: 100%;
+}
+
 .App {
   text-align: center;
   background-color: #FAF8F2;
@@ -22,6 +27,13 @@
   background: transparent !important;
   position: absolute;
   width: 100%;
+  margin-top: 17px;
+}
+
+.Navbar-shadow{
+  padding-bottom: 10px;
+  box-shadow: 0px 5px rgb(250, 243, 225);
+  border-bottom: 1px solid rgb(250, 243, 225);
 }
 
 .Navbar .navbar{

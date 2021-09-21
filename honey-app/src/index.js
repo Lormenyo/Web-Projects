@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import SignIn from "./components/signin/signin";
+import SignUp from "./pages/signup/signup"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route } from "react-router-dom";
 
@@ -9,6 +11,8 @@ const routing = (
   <div>
     <BrowserRouter>
       <Route exact path="/" component={App}></Route>
+      <Route path="/signin" component={SignIn}></Route>
+      <Route path="/signup" component={SignUp}></Route>
     </BrowserRouter>
   </div>
 );

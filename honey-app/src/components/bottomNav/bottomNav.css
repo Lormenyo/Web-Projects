@@ -1,6 +1,8 @@
 .BottomNavBar {
   height: 10vh;
-  position: relative;
+  position: fixed;
+  width: 400px;
+  bottom: 0;
   background: #c1bab9;
   color: #452725;
 }

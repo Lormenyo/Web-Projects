@@ -24,10 +24,20 @@
     text-align: left;
     padding: auto;
     padding: 0 20px;
+    cursor: pointer;
+}
+
+.menuItem:hover{
+    background-color: #C1BAB9;
 }
 
 a {
     color: #452725;
     text-decoration: none;
     text-align: left;
+}
+
+a:hover{
+    color: #452725;
+    text-decoration: none; 
 }

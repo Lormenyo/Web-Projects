@@ -17,40 +17,48 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="Navbar">
-        <Navbar>
-          <Container>
-            <Navbar.Brand href="#home">
-              <div className="App-logo"></div>
-            </Navbar.Brand>
-            <div className="justify-content-end">
-              <FiMenu size={28} onClick={toggleMenu} />
+    <div className="App-background">
+      <div className="App">
+        <div className="Navbar">
+          <Navbar>
+            <Container>
+              <Navbar.Brand href="#home">
+                <div className="App-logo"></div>
+              </Navbar.Brand>
+              <div className="justify-content-end">
+                <FiMenu size={28} onClick={toggleMenu} />
+              </div>
+            </Container>
+          </Navbar>
+          {/* <BiDownArrow size={28} color={"black"}/> */}
+          {isMenuVisible ? <TopNavMenu /> : null}
+        </div>
+
+        <div className="Posts">
+          <div className="Post">
+            <div className="postImage"></div>
+            <SideBar />
+            <div className="postDetails">
+              <PostDetails
+                name="Shop Name"
+                description="The description of the post!"
+              />
             </div>
-          </Container>
-        </Navbar>
-        {/* <BiDownArrow size={28} color={"black"}/> */}
-        {isMenuVisible ? <TopNavMenu /> : null}
-      </div>
-
-      <div className="Posts">
-        <div className="Post">
-          <div className="postImage"></div>
-          <SideBar />
-          <div className="postDetails">
-          <PostDetails name="Shop Name" description="The description of the post!"/>
+          </div>
+          <div className="Post">
+            <div className="postImage"></div>
+            <SideBar />
+            <div className="postDetails">
+              <PostDetails
+                name="Shop Name"
+                description="The description of the post!"
+              />
+            </div>
           </div>
         </div>
-        <div className="Post">
-          <div className="postImage"></div>
-          <SideBar />
-          <div className="postDetails">
-          <PostDetails name="Shop Name" description="The description of the post!"/>
-          </div>
-        </div>
-      </div>
 
-      <BottomNavBar />
+        <BottomNavBar />
+      </div>
     </div>
   );
 }

@@ -16,7 +16,7 @@ function PostDetails(props) {
           </div>
         </Col>
         <Col sm={8} className="postTitle">
-          <Row className="title">{props.name}</Row>
+          <Row className="post-title">{props.name}</Row>
           <Row className="description">{props.description}</Row>
         </Col>
         <Col sm={2} className="postMute">

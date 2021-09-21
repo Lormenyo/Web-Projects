@@ -23,3 +23,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.root{
+  background-color: #FAF8F2;
+  width: 100%;
+}

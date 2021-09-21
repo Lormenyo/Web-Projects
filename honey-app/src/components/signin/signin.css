@@ -1,0 +1,62 @@
+.SignIn{
+    width: 400px;
+}
+
+.content{
+    position: relative;
+    top: 120px;
+}
+
+.title{
+    color: #452725;
+}
+
+.subtitle{
+    font-size: 0.8rem;
+    color: #786E6C;
+}
+
+.social-media-facebook{
+    background-image: url("../../assets/facebook.png");
+    height: 12px;
+    width: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inherit;
+}
+
+
+.social-media-google{
+    background-image: url("../../assets/google.png");
+    height: 12px;
+    width: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inherit;
+}
+
+.btn{
+    width: 80%;
+    text-align: center;
+    font-size: 0.7rem;
+    height: 40px;
+    border: #786E6C;
+}
+
+.facebook{
+    background-color: #3B5998;
+    border: #786E6C;
+}
+
+.facebook:hover{
+    background-color: #2f4779;
+}
+
+
+.signup-text a{
+    color: #f8ba3c;
+    cursor: pointer;
+}
+

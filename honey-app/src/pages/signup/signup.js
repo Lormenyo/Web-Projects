@@ -1,9 +1,71 @@
-import React, { Component } from 'react';
+import { Navbar, Container } from "react-bootstrap";
+import { FiMenu } from "react-icons/fi";
+import { RiArrowLeftSLine } from "react-icons/ri";
+import TopNavMenu from "../../components/topNav/topNavMenu";
+import BottomNavBar from "../../components/bottomNav/bottomNav";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./signup.css";
 
-class SignUp extends React.Component {
-    render() { 
-        return <div>Sign up</div>;
-    }
-}
- 
+function SignUp() {
+  const [isMenuVisible, setMenuVisibility] = useState(false);
+
+  function toggleMenu() {
+    setMenuVisibility(!isMenuVisible);
+  }
+
+    return (
+      <div className="App">
+        <div className="SignIn">
+          <div className="Navbar Navbar-shadow">
+            <Navbar>
+              <Container>
+                <RiArrowLeftSLine size={28} />
+                <Navbar.Brand href="/">
+                  <div className="App-logo"></div>
+                </Navbar.Brand>
+                <div className="justify-content-end">
+                  <FiMenu size={28} onClick={toggleMenu} />
+                </div>
+              </Container>
+            </Navbar>
+            {/* <BiDownArrow size={28} color={"black"}/> */}
+            {isMenuVisible ? <TopNavMenu /> : null}
+          </div>
+          <div className="content">
+            <Container>
+              <div className="title">
+                <h6>Join the Community</h6>
+              </div>
+              <div className="subtitle">
+                Sign up to start the experience
+              </div>
+
+              <div className="mt-4">
+                <button className="btn btn-primary facebook mt-3">
+                  <span className="social-media-facebook"></span>
+                  Sign up with Facebook
+                </button>
+
+                <button className="btn btn-primary mt-3">
+                  <span className="social-media-google"></span>
+                  Sign up with Google
+                </button>
+              </div>
+
+              <div className="mt-5 subtitle">
+                Already a Honey Butter member?{" "}
+                <span className="signin-text">
+                    <Link to="/signin">Sign In</Link>
+                </span>
+              </div>
+            </Container>
+          </div>
+        </div>
+        <BottomNavBar />
+      </div>
+    );
+  }
+
+
 export default SignUp;
