@@ -1,0 +1,31 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\lorme\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\lorme\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\lorme\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Users\lorme\AppData\Local\Android\Sdk\cmdline-tools\latest\bin;C:\Program Files\Java\jdk-15.0.1\bin;C:\Program Files\Polyspace\R2020a\runtime\win64;C:\Program Files\Polyspace\R2020a\bin;C:\Program Files\Polyspace\R2020a\polyspace\bin;C:\Program Files (x86)\PuTTY;C:\Program Files\nodejs;C:\ffmpeg-N-102544-gc9a79532e5-win64-lgpl\ffmpeg-N-102544-gc9a79532e5-win64-lgpl\bin;C:\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\php-8.0.9;C:\ProgramData\ComposerSetup\bin;C:\Ruby27-x64\bin;C:\Users\lorme\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\lorme\AppData\Local\Programs\Python\Python37;C:\Users\lorme\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\lorme\AppData\Local\Programs\Python\Python38;C:\Users\lorme\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\lorme\AppData\Local\Programs\Python\Python39;C:\Users\lorme\AppData\Local\Microsoft\WindowsApps;C:\Users\lorme\AppData\Local\Programs\Microsoft VS Code\bin;C:\flutter\bin;C:\Program Files\Java\jdk-15.0.1\bin;C:\Users\lorme\AppData\Local\Android\Sdk\cmdline-tools\latest\bin;C:\Program Files\heroku\bin;C:\Users\lorme\AppData\Roaming\npm;C:\Program Files\PostgreSQL\13\bin;C:\ffmpeg-N-102544-gc9a79532e5-win64-lgpl\ffmpeg-N-102544-gc9a79532e5-win64-lgpl\bin;C:\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\Users\lorme\AppData\Roaming\Composer\vendor\bin;C:\ngrok;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.15.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (C:\Users\lorme\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:96815:59)
+      at Object.<anonymous> (C:\Users\lorme\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:89088:38)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\lorme\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\lorme\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

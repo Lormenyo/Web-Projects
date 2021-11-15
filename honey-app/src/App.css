@@ -1,5 +1,6 @@
 .App-background{
-  background-color: #FAF8F2;
+  /* background-color: #FAF8F2; */
+  background-color: #F0E6DB;
   width: 100%;
 }
 
@@ -47,7 +48,9 @@
 .Posts{
   overflow-y: scroll;
   height: 90%;
-  scroll-snap-align: start;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
 .postImage{
@@ -56,6 +59,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  scroll-snap-align: start;
 }
 
 .postDetails{
