@@ -1,5 +1,5 @@
 export default {
     port: 1337,
     host: 'localhost',
-    dbUrl: 'mongodb://localhost:27017/rest-api'
+    dbUri: 'mongodb://localhost:27017/typescript-rest-api'
 };
