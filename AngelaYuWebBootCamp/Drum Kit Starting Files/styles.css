@@ -79,3 +79,8 @@ footer {
   margin: 10px;
   background-color: white;
 }
+
+body p {
+  color: white;
+  font-family: "Arvo", cursive;
+}
