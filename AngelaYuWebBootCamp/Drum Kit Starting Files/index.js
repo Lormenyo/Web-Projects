@@ -6,11 +6,13 @@ for (let index = 0; index < drums.length; index++) {
 
 document.addEventListener("keydown", function (event) {
     getSound(event.key);
+    animateButton(event.key);
 })
 
 function playSound() {
     let drumInnerHTML = this.innerHTML;
     getSound(drumInnerHTML);
+    animateButton(drumInnerHTML);
 }
 
 function playAudio(path) {
@@ -44,4 +46,13 @@ function getSound(drum) {
         default:
             break;
     }
+}
+
+function animateButton(drum) {
+    let activeDrum = document.querySelector("."+drum);
+    activeDrum.classList.add("pressed");
+
+    setTimeout(() => {
+        activeDrum.classList.remove("pressed");
+    }, 100);
 }
