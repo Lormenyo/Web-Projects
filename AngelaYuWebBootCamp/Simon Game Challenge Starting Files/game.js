@@ -17,6 +17,16 @@ let Colours = {
 
 let buttonColours = [Colours.red, Colours.blue, Colours.green, Colours.yellow];
 
+// Evenrything starts here
+$(document).keydown(function () {
+    if (!started){
+        nextSequence(); 
+        started = true;
+    }
+});
+
+$(".btn").click(handleClick);
+
 
 function nextSequence() {
     userClickedPattern = [];
@@ -40,8 +50,6 @@ function nextSequence() {
 function handleClick(event) {
     let userChosenColour = event.target.id;
     userClickedPattern.push(userChosenColour);
-
-    console.log(userClickedPattern);
 
     playSound(userChosenColour);
     animatePress(userChosenColour);
@@ -85,12 +93,5 @@ function startOver() {
     started = false;
 }
 
-$(document).keydown(function () {
-    if (!started){
-        nextSequence(); 
-        started = true;
-    }
-});
 
-$(".btn").click(handleClick);
 
