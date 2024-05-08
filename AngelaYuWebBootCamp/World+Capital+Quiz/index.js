@@ -3,11 +3,11 @@ import bodyParser from "body-parser";
 import pg from "pg";
 
 const db = new pg.Client({
-  user: "postgress",
+  user: "postgres",
   host: "localhost",
   database: "world",
   password: "admin1234",
-  port: 5432
+  port: 5432,
 });
 
 const app = express();
@@ -15,11 +15,19 @@ const port = 3000;
 
 db.connect();
 
-let quiz = [
-  { country: "France", capital: "Paris" },
-  { country: "United Kingdom", capital: "London" },
-  { country: "United States of America", capital: "New York" },
-];
+db.query("SELECT * from capitals", (err, res) => {
+  if (err) {
+    console.error("Error executing query", err.stack);
+  } else {
+    quiz = res.rows;
+    console.log(quiz.length);
+  }
+  db.end();
+})
+
+
+
+let quiz = [];
 
 let totalCorrect = 0;
 
